@@ -29,8 +29,8 @@ namespace Nut {
 #define NUT_CORE_FATAL(...)		::Nut::Log::GetCoreLogger()->critical(__VA_ARGS__)
 
 // Client log macros
-#define NUT_TRACE(...)		::Nut::Log::GetClientLogger()->trace(__VA_ARGS__)
-#define NUT_INFO(...)		::Nut::Log::GetClientLogger()->info(__VA_ARGS__)
-#define NUT_WARN(...)		::Nut::Log::GetClientLogger()->warn(__VA_ARGS__)
-#define NUT_ERROR(...)		::Nut::Log::GetClientLogger()->error(__VA_ARGS__)
-#define NUT_FATAL(...)		::Nut::Log::GetClientLogger()->critical(__VA_ARGS__)
+#define NUT_TRACE(...)			::Nut::Log::GetClientLogger()->trace(__VA_ARGS__)
+#define NUT_INFO(...)			::Nut::Log::GetClientLogger()->info(__VA_ARGS__)
+#define NUT_WARN(...)			::Nut::Log::GetClientLogger()->warn(__VA_ARGS__)
+#define NUT_ERROR(...)			::Nut::Log::GetClientLogger()->error(__VA_ARGS__)
+#define NUT_FATAL(...)			::Nut::Log::GetClientLogger()->critical(__VA_ARGS__)
