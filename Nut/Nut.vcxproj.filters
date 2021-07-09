@@ -1,8 +1,11 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <Filter Include="Nut">
       <UniqueIdentifier>{3C0E880B-A817-887C-3193-9E7C9D9B937C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Nut\Event">
+      <UniqueIdentifier>{8D4C46BE-F9B6-FA34-42F5-ABDAAE9ED889}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -16,9 +19,14 @@
     <ClInclude Include="src\Nut\EntryPoint.h">
       <Filter>Nut</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nut\Event\Event.h">
+      <Filter>Nut\Event</Filter>
+    </ClInclude>
     <ClInclude Include="src\Nut\Log.h">
       <Filter>Nut</Filter>
     </ClInclude>
+    <ClInclude Include="src\Nut\Event\KeyEvent.h" />
+    <ClInclude Include="src\Nut\Event\MouseEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nut\Application.cpp">
