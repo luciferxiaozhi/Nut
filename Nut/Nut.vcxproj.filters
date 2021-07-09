@@ -27,6 +27,7 @@
     </ClInclude>
     <ClInclude Include="src\Nut\Event\KeyEvent.h" />
     <ClInclude Include="src\Nut\Event\MouseEvent.h" />
+    <ClInclude Include="src\Nut\Event\ApplicationEvent.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nut\Application.cpp">
