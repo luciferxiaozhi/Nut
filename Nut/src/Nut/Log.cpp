@@ -1,3 +1,4 @@
+#include "NutPch.h"
 #include "Log.h"
 
 namespace Nut {

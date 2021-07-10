@@ -1,40 +1,80 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Nut">
-      <UniqueIdentifier>{3C0E880B-A817-887C-3193-9E7C9D9B937C}</UniqueIdentifier>
+    <Filter Include="src">
+      <UniqueIdentifier>{2DAB880B-99B4-887C-2230-9F7C8E38947C}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Nut\Event">
-      <UniqueIdentifier>{8D4C46BE-F9B6-FA34-42F5-ABDAAE9ED889}</UniqueIdentifier>
+    <Filter Include="src\Nut">
+      <UniqueIdentifier>{D39A2FA9-3F7A-AE44-4892-391BB4F014A6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Nut\Events">
+      <UniqueIdentifier>{577B16BE-4349-0AC4-2CDD-7AEA184AE628}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\Platform">
+      <UniqueIdentifier>{21CA02E5-0D2D-9289-B6B2-CA3FA2F45D0C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor">
+      <UniqueIdentifier>{B3738122-9F15-ACF8-88D0-BF4C74113349}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="vendor\GLFW">
+      <UniqueIdentifier>{D27667C1-3E2C-E0B6-C720-DA8D33D5D6BA}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="src\Nut.h" />
+    <ClInclude Include="src\Nut.h">
+      <Filter>src</Filter>
+    </ClInclude>
     <ClInclude Include="src\Nut\Application.h">
-      <Filter>Nut</Filter>
+      <Filter>src\Nut</Filter>
     </ClInclude>
     <ClInclude Include="src\Nut\Core.h">
-      <Filter>Nut</Filter>
+      <Filter>src\Nut</Filter>
     </ClInclude>
     <ClInclude Include="src\Nut\EntryPoint.h">
-      <Filter>Nut</Filter>
+      <Filter>src\Nut</Filter>
     </ClInclude>
-    <ClInclude Include="src\Nut\Event\Event.h">
-      <Filter>Nut\Event</Filter>
+    <ClInclude Include="src\Nut\Events\ApplicationEvent.h">
+      <Filter>src\Nut\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nut\Events\Event.h">
+      <Filter>src\Nut\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nut\Events\KeyEvent.h">
+      <Filter>src\Nut\Events</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Nut\Events\MouseEvent.h">
+      <Filter>src\Nut\Events</Filter>
     </ClInclude>
     <ClInclude Include="src\Nut\Log.h">
-      <Filter>Nut</Filter>
+      <Filter>src\Nut</Filter>
     </ClInclude>
-    <ClInclude Include="src\Nut\Event\KeyEvent.h" />
-    <ClInclude Include="src\Nut\Event\MouseEvent.h" />
-    <ClInclude Include="src\Nut\Event\ApplicationEvent.h" />
+    <ClInclude Include="src\Nut\Window.h">
+      <Filter>src\Nut</Filter>
+    </ClInclude>
+    <ClInclude Include="src\NutPch.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Platform\WindowsWindow.h">
+      <Filter>src\Platform</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\Nut\Application.cpp">
-      <Filter>Nut</Filter>
+      <Filter>src\Nut</Filter>
     </ClCompile>
     <ClCompile Include="src\Nut\Log.cpp">
-      <Filter>Nut</Filter>
+      <Filter>src\Nut</Filter>
     </ClCompile>
+    <ClCompile Include="src\NutPch.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Platform\WindowsWindow.cpp">
+      <Filter>src\Platform</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="vendor\GLFW\include">
+      <Filter>vendor\GLFW</Filter>
+    </None>
   </ItemGroup>
 </Project>

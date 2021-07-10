@@ -1,6 +1,8 @@
+#include "NutPch.h"
+
 #include "Application.h"
 #include "log.h"
-#include "Event/ApplicationEvent.h"
+#include "Events/ApplicationEvent.h"
 
 namespace Nut {
 	Application::Application()
@@ -13,7 +15,6 @@ namespace Nut {
 
 	void Application::Run()
 	{
-		
 
 		while (true);
 	}

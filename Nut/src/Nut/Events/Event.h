@@ -2,9 +2,6 @@
 
 #include "Nut/Core.h"
 
-#include <string>
-#include <functional>
-
 namespace Nut {
 
 	// Events in Nut are currently blocking, meaning when an event occurs it

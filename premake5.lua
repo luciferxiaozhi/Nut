@@ -11,6 +11,12 @@ workspace "Nut"
 
 outputdir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
 
+-- include directories relative to root folder (solution directory)
+IncludeDir = {}
+IncludeDir["GLFW"] = "Nut/vendor/GLFW/include"
+
+include "Nut/vendor/GLFW"
+
 project "Nut"
     location "Nut"
     kind "SharedLib"
@@ -19,16 +25,27 @@ project "Nut"
     targetdir ("bin/" .. outputdir .. "/%{prj.name}")
     objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
 
+	pchheader "NutPch.h"
+	pchsource "Nut/src/NutPch.cpp"
+
     files
     {
         "%{prj.name}/src/**.h",
-        "%{prj.name}/src/**.cpp"
+        "%{prj.name}/src/**.cpp",
+		"%{IncludeDir.GLFW}"
     }
+
+	links
+	{
+		"GLFW",
+		"opengl32.lib"
+	}
 
     includedirs
     {
         "%{prj.name}/vendor/spdlog/include",
-        "%{prj.name}/src"
+        "%{prj.name}/src",
+		"%{IncludeDir.GLFW}"
     }
 
     filter "system:windows"
